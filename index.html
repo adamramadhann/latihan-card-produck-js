@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body class="">
+    <main class="w-[80%] mx-auto pt-3 ">
+      <!-- header -->
+      <header class=" w-full flex justify-between items-center py-5 px-8">
+        <div class="title">PRODUCT LIST</div>
+        <div class="flex gap-2">
+          <div>
+            <button id="addProduct" class="btn-add flex items-center justify-center gap-0 p-1 px-2 rounded-xl bg-blue-500 text-white font-semibold">Add Product <span><svg class="w-4 h-4 text-white font-semibold dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7 7V5"/>
+            </svg>
+            </span></button>
+          </div>
+          <div class="icon-cart relative">
+            <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+            </svg>
+            <span class="w-7 h-7 flex bg-red-500 rounded-full justify-center items-center text-white absolute top-1/2 -right-5">0</span>
+          </div>
+         
+        </div>
+       
+      </header>
+      <!-- end header -->
+
+       <!-- content product list -->
+      <div class="list-product grid grid-cols-2 p-5 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 gap-5 py-4 ">
+       
+      
+        <div class="item bg-slate-200 shadow rounded-md flex flex-col gap-2 items-center p-4">
+          <img src="./public/burger.png" alt="">
+          <h2 class="text-base sm:text-xl md:text-lg lg:text-xl xl:text-2xl font-semibold">PRODUCT NAME</h2>
+          <div class="price text-lg font-semibold text-orange-500">$2.00</div>
+          <button class="add-chart p-2 rounded-md bg-black text-white hover:scale-[1.01] mb-4 cursor-pointer">add to chart</button>
+        </div>
+      
+       
+      </div>
+      <!-- end content product list -->
+
+      <!-- cart tab -->
+        <div class="cart-tab w-[400px]  bg-[#000000af] text-white shadow fixed top-0 right-0 bottom-0 grid grid-rows-layout transition-transform duration-500">
+          <div class="w-full flex justify-between text-white font-semibold p-5">
+            <h1 class="text-xl">Shoping Cart</h1>
+            <div class="close text-xl cursor-pointer">X</div>
+          </div>
+          <div class="list-cart overflow-auto">
+           
+            <div class="item grid grid-cols-cart-item items-center text-center">
+              <div class="img flex justify-center">
+                <img src="./public/burger.png" alt="" class="w-[80%]">
+              </div>
+              <div class="name">
+                NAME
+              </div>
+              <div class="totalPrice">
+                $2.00
+              </div>
+              <div class="quantity ">
+                <span class="inline-block text-center cursor-pointer w-[25px] h-[25px] rounded-full text-gray-500 bg-white">&lt;</span>
+                <span class="inline-block text-center cursor-pointer w-[25px] h-[25px] rounded-full text-gray-500 bg-white">1</span>
+                <span class="inline-block text-center cursor-pointer w-[25px] h-[25px] rounded-full text-gray-500 bg-white">&gt;</span>
+
+              </div>
+            </div>
+            <div class="item grid grid-cols-cart-item items-center text-center">
+              <div class="img flex justify-center">
+                <img src="./public/burger.png" alt="" class="w-[80%]">
+              </div>
+              <div class="name">
+                NAME
+              </div>
+              <div class="totalPrice">
+                $2.00
+              </div>
+              <div class="quantity ">
+                <span class="inline-block text-center cursor-pointer w-[25px] h-[25px] rounded-full text-gray-500 bg-white">&lt;</span>
+                <span class="inline-block text-center cursor-pointer w-[25px] h-[25px] rounded-full text-gray-500 bg-white">1</span>
+                <span class="inline-block text-center cursor-pointer w-[25px] h-[25px] rounded-full text-gray-500 bg-white">&gt;</span>
+
+              </div>
+            </div>
+            <div class="item grid grid-cols-cart-item items-center text-center">
+              <div class="img flex justify-center">
+                <img src="./public/burger.png" alt="" class="w-[80%]">
+              </div>
+              <div class="name">
+                NAME
+              </div>
+              <div class="totalPrice">
+                $2.00
+              </div>
+              <div class="quantity ">
+                <span class="inline-block text-center cursor-pointer w-[25px] h-[25px] rounded-full text-gray-500 bg-white">&lt;</span>
+                <span class="inline-block text-center cursor-pointer w-[25px] h-[25px] rounded-full text-gray-500 bg-white">1</span>
+                <span class="inline-block text-center cursor-pointer w-[25px] h-[25px] rounded-full text-gray-500 bg-white">&gt;</span>
+
+              </div>
+            </div>
+            <div class="item grid grid-cols-cart-item items-center text-center">
+              <div class="img flex justify-center">
+                <img src="./public/burger.png" alt="" class="w-[80%]">
+              </div>
+              <div class="name">
+                NAME
+              </div>
+              <div class="totalPrice">
+                $2.00
+              </div>
+              <div class="quantity ">
+                <span class="inline-block text-center cursor-pointer w-[25px] h-[25px] rounded-full text-gray-500 bg-white">&lt;</span>
+                <span class="inline-block text-center cursor-pointer w-[25px] h-[25px] rounded-full text-gray-500 bg-white">1</span>
+                <span class="inline-block text-center cursor-pointer w-[25px] h-[25px] rounded-full text-gray-500 bg-white">&gt;</span>
+
+              </div>
+            </div>
+          </div>
+          <div class="btn w-full grid grid-cols-1 pt-4">
+            <button class="checkout p-2 bg-orange-500 text-white font-semibold">checkout</button>
+          </div>
+        </div>
+      <!-- end cart tab -->
+
+      <!-- efek blur pada saat form add muncul -->
+      <div id="blurOverlay" class="hidden fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-10"></div>
+      <!-- end efek blur -->
+
+      <!-- form add product -->
+          <div id="form-container" class="hidden fixed top-1/3 left-1/2 z-20">
+            <form id="addForm" class="bg-white p-6 rounded shadow-md">
+              <h2 class="text-lg font-bold mb-4">Add New Item</h2>
+              <div class="flex flex-col gap-1">
+                <label for="productName" class="block mb-2">Prdocut Name</label>
+                <input type="text" id="productName" name="productName" class="w-full mb-4 p-2 border rounded" required>
+              </div>
+              <div class="flex flex-col gap-1">
+                <label for="priceProduct" class="block mb-2">Prdocut Name</label>
+                <input type="text" id="priceProduct" name="priceProduct" class="w-full mb-4 p-2 border rounded" required>
+              </div>
+            <div class="flex flex-col gap-1">
+              <input type="file" id="image" accept="image/*" required>
+            </div>
+              <div class="flex gap-2 mt-4">
+                  <button type="submit" class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">Submit</button>
+                  <button type="button" id="closeButton" class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">Close</button>
+              </div>
+          </form>
+          </div>
+      <!-- end form add product -->
+
+    </main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

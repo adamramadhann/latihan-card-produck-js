@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+}
+
+.list-cart .item:nth-child(even){
+    background-color: #eee3;
+}
+
+.cart-tab{
+    inset: 0 -400px 0 auto;
+}
+
+
+.container{
+    transform: translateX(-250px);
+}
+
+body.showCart .cart-tab{
+    inset: 0 0 0 auto;
+}
+
+.list-cart::-webkit-scrollbar {
+    width: 0;
+  }
+
